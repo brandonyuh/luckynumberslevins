@@ -1,0 +1,18 @@
+.search {
+  text-align: center;
+  &__box {
+    background: url("../../assets/icons/search.svg") center left no-repeat;
+    padding-left: 50px;
+    width: 1069px;
+    height: 77px;
+    padding-top: 5px;
+    &::placeholder {
+      font-family: "Rubik";
+      font-style: italic;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 36px;
+      
+    }
+  }
+}
