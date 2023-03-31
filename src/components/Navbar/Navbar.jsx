@@ -1,6 +1,9 @@
 import './Navbar.scss';
 import logo from '../../assets/logo/visier-logo.svg';
 import logout from '../../assets/icons/log-out.svg';
+import search from '../../assets/icons/search2.svg';
+import book from '../../assets/icons/book.svg';
+import graph from '../../assets/icons/graph.svg';
 
 function Navbar() {
    return (
@@ -36,6 +39,9 @@ function Navbar() {
                      </span>
                   </a>
                </li>
+               <img className='navbar__icon' src={search} alt='search icon' />
+               <img className='navbar__icon' src={book} alt='book icon' />
+               <img className='navbar__icon' src={graph} alt='graph icon' />
             </ul>
             <img className='navbar__img' src={logout} alt='Logo' />
          </nav>
