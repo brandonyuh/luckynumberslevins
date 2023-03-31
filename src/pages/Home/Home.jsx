@@ -1,16 +1,18 @@
-import Header from '../../components/Header/Header';
-import MainContent from '../../components/MainContent/MainContent';
-import Navbar from '../../components/Navbar/Navbar';
-import './Home.scss';
+import Header from "../../Components/Header/Header";
+import MainContent from "../../Components/MainContent/MainContent";
+import Navbar from "../../Components/Navbar/Navbar";
+import Creation from "../../Components/Creation/Creation";
+import "./Home.scss";
 
 function Home() {
-   return (
-      <div className='grid'>
-         <Navbar />
+  return (
+    <div>
+      {/* <Navbar />
          <Header />
-         <MainContent />
-      </div>
-   );
+         <MainContent /> */}
+      <Creation />
+    </div>
+  );
 }
 
 export default Home;

@@ -3,6 +3,7 @@
 @use "../../styles/partials/variables" as *;
 
 .creation {
+  max-width: 1280px;
   &_top {
     background-color: $primaryBlue;
     color: $primaryLight;
@@ -43,36 +44,74 @@
       //   margin-bottom: 2rem;
     }
   }
-
-  &_boxes {
+  &__boxes {
     display: flex;
     justify-content: space-around;
-    flex: 1;
-    // margin-top: 8rem;
-    // width: 80%;
-    // min-height: 300px;
+    // border-radius: 20px;
     margin: 4rem auto;
-    // display: flex;
-    // gap: 2rem;
-    // flex-direction: row;
-    // background: #fff4d6;
 
-    &__divided {
+    &-left {
       display: flex;
-      background: #fff4d6;
-      height: 150px;
-      width: 50%;
-      margin-left: 2rem;
+      flex-direction: column;
+      gap: 2rem;
 
-      border-radius: 20px;
-      flex-wrap: wrap;
-      //   width: 80%;
-      //   min-height: 300px;
-      //   margin: 4rem auto;
+      //   background-color: #dbf1d3;
+      //   background-color: #dbf1d3;
+      //   border-radius: 20px;
+      //   height: 300px;
+      //   width: 400px;
+      //   display: flex;
+      //   flex-direction: column;
+
+      &-content {
+        // margin-bottom: 10rem;
+        // color: $fontColor;
+        // font-size: 3rem;
+        // background-color: #dbf1d3;
+        // border-radius: 20px;
+        // height: 300px;
+        // width: 400px;
+        // display: flex;
+        // flex-direction: column;
+        // margin-bottom: 2rem;
+        // justify-content: flex-start;
+        // align-items: flex-end;
+        // margin-left: 2rem;
+
+        &-text {
+          color: $fontColor;
+          font-size: 3rem;
+          background-color: #dbf1d3;
+          border-radius: 20px;
+          height: 300px;
+          width: 400px;
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-end;
+          margin-left: 2rem;
+          margin-bottom: 2rem;
+        }
+      }
     }
 
-    &__external-top {
-      justify-content: flex-end;
+    &-right {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      //   background-color: #dbf1d3;
+      border-radius: 20px;
+
+      &-text {
+        color: $fontColor;
+        font-size: 3rem;
+        background-color: #dbf1d3;
+        border-radius: 20px;
+        height: 300px;
+        width: 400px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+      }
     }
   }
 }
