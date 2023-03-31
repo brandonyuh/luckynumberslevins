@@ -1,5 +1,5 @@
 import "./CategoryWidgetCreation.scss";
-import SearchBox from "../../components/SearchBox/SearchBox"
+import SearchBox from "../../components/SearchBox/SearchBox";
 import BackWhite from "../../assets/images/back_white.svg";
 import Image1 from "../../assets/images/category/1.svg";
 import Image2 from "../../assets/images/category/2.svg";
@@ -13,16 +13,13 @@ import Image9 from "../../assets/images/category/9.svg";
 import Image10 from "../../assets/images/category/10.svg";
 import Image11 from "../../assets/images/category/11.svg";
 import Image12 from "../../assets/images/category/12.svg";
+import HeaderPage from "../../components/HeaderPage/HeaderPage";
 
 function CategoryWidgetCreation() {
   return (
     <>
-      <div className="category__back">
-        <img src={BackWhite}></img>
-      </div>
+      <HeaderPage title="Create a Widget" subtitle="2. Select the category of data you want to visualize."></HeaderPage>
 
-      <h1 className="category__title">Create a Widget</h1>
-      <p className="category__description">2. Select the category of data you want to visualize.</p>
       <p className="category__subdescription">
         1 Dataset {">"} Internal {">"} Department {">"}
       </p>
