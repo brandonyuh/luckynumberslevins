@@ -1,4 +1,5 @@
 import "./CategoryWidgetCreation.scss";
+import SearchBox from "../../components/SearchBox/SearchBox"
 import BackWhite from "../../assets/images/back_white.svg";
 import Image1 from "../../assets/images/category/1.svg";
 import Image2 from "../../assets/images/category/2.svg";
@@ -22,6 +23,10 @@ function CategoryWidgetCreation() {
 
       <h1 className="category__title">Create a Widget</h1>
       <p className="category__description">2. Select the category of data you want to visualize.</p>
+      <p className="category__subdescription">
+        1 Dataset {">"} Internal {">"} Department {">"}
+      </p>
+      <SearchBox></SearchBox>
       <div className="category__icons">
         <div className="category__icons--element category--blue">
           <img className="category__icons--icon" src={Image1}></img>

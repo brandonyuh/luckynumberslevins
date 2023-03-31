@@ -1,0 +1,8 @@
+.search {
+  text-align: center;
+  &__box {
+    background: url("../../assets/icons/search.svg") top left no-repeat;
+    height: 50px;
+    padding-left: 50px;
+  }
+}
