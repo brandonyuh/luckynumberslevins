@@ -1,13 +1,13 @@
 import './Cards.scss';
 
-function Card({ imageSrc, title, text, bgColor, txtColor }) {
+function Card({ imageSrc, title, text, bgColor, txtColor, width, height, fontSize, imgheight }) {
    return (
-      <div className='card' style={{ backgroundColor: bgColor }}>
+      <div className='card' style={{ backgroundColor: bgColor, width: width, height: height }}>
          <div className='card__container'>
-            <img src={imageSrc} alt={title} className='card__container--image' />
+            <img src={imageSrc} style={{ height: imgheight }} alt={title} className='card__container--image' />
          </div>
          <div className='card__content'>
-            <h3 className='card__title' style={{ color: txtColor }}>
+            <h3 className='card__title' style={{ color: txtColor, fontSize: fontSize }}>
                {title}
             </h3>
             <p className='card__text' style={{ color: txtColor }}>
