@@ -3,99 +3,74 @@
 @use "../../styles/partials/variables" as *;
 
 .container {
-  &_top {
-    background-color: $primaryBlue;
-    color: $primaryLight;
-    height: 254px;
-  }
 
-  &_titles {
-    // display: flex;
-    // flex-direction: row;
-    // justify-content: center;
-    // align-items: center;
-    padding-top: 4rem;
-  }
 
-  &_title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  &__boxes {
 
-    // margin-top: ;
-    // padding-top: 4rem;
-  }
-
-  &_arrow {
-    display: flex;
-    justify-content: flex-start;
-    // align-items: center;
-    padding-left: 2rem;
-  }
-
-  &_subtitle {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2rem;
-    // padding-top: 2rem;
-    &-title {
-      //   display: flex;
-      //   margin-bottom: 2rem;
-    }
-  }
-
-  &_boxes {
-    // display: flex;
-    // justify-content: space-around;
-    // margin-top: 8rem;
-    width: 80%;
-    min-height: 300px;
+    max-width: 60rem;
+    min-height: 400px;
     margin: 8rem auto;
     display: flex;
-    gap: 2rem;
+    gap: 4rem;
   }
 
-  &_internal {
+  &__internal {
     background: #d4f5f6;
     border-radius: 20px;
-    margin-left: 4rem;
-    &-title {
-      font-size: 2rem;
-      justify-content: center;
-      margin-left: 6rem;
-      padding-top: 3rem;
+    padding: 5rem 3rem;
+    flex: 1;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+
+    &--img{
+      max-width: 2.5rem;
     }
 
-    &-text {
-      width: 50%;
+    &--title {
+      font-size: 1rem;
+      display: flex;
+      gap: 1rem;
+
+
+    }
+
+    &--text {
       font-size: 1rem;
       color: black;
       display: flex;
       justify-content: center;
-      margin-left: 6rem;
-      padding-top: 2rem;
+      margin-top: 2rem;
+      font-size: 1.175rem;
+      font-weight: 300;
     }
   }
 
-  &_external {
+  &__external {
     background: #ffdada;
     border-radius: 20px;
-    // margin-left: 2rem;
-    &-title {
-      font-size: 2rem;
-      justify-content: center;
-      margin-left: 6rem;
-      padding-top: 3rem;
+    flex: 1;
+    padding: 5rem 3rem;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+
+    &--img{
+      max-width: 2.5rem;
     }
 
-    &-text {
-      width: 50%;
+    &--title {
+      font-size: 1rem;
+      display: flex;
+      gap: 1rem;
+
+
+    }
+
+    &--text {
       font-size: 1rem;
       color: black;
       display: flex;
       justify-content: center;
-      margin-left: 6rem;
-      padding-top: 2rem;
+      margin-top: 2rem;
+      font-size: 1.175rem;
+      font-weight: 300;
     }
   }
 }
