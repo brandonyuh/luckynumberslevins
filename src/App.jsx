@@ -1,10 +1,12 @@
 import './App.scss';
-import Home from './pages/Home/Home';
+import InternalExternal from './components/InternalExternal/InternalExternal';
+// import Home from './pages/Home/Home';
 
 function App() {
    return (
       <div className='App'>
-         <Home />
+         <InternalExternal />
+         {/* <Home /> */}
       </div>
    );
 }
