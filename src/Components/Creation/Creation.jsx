@@ -26,7 +26,7 @@ function Creation() {
         <div className="creation__boxes-left">
           <div className="creation__boxes-left-content">
             <p className="creation__boxes-left-content-text">
-              Accounting
+              ACCOUNTING
               <img
                 className="creation__boxes-left-content-text-img"
                 src={calculator}
@@ -34,7 +34,7 @@ function Creation() {
               />
             </p>
             <p className="creation__boxes-left-content-text">
-              Sales
+              SALES
               <img
                 className="creation__boxes-left-content-text-img"
                 src={arrowGrow}
@@ -42,7 +42,7 @@ function Creation() {
               />
             </p>
             <p className="creation__boxes-left-content-text">
-              Marketing
+              MARKETING
               <img
                 className="creation__boxes-left-content-text-img"
                 src={happyFace}
@@ -61,7 +61,7 @@ function Creation() {
         </div>
         <div className="creation__boxes-right">
           <p className="creation__boxes-right-text">
-            Finance
+            FINANCE
             <img
               className="creation__boxes-left-content-text-img"
               src={money}
@@ -69,7 +69,7 @@ function Creation() {
             />
           </p>
           <p className="creation__boxes-right-text">
-            People
+            PEOPLE
             <img
               className="creation__boxes-left-content-text-img"
               src={people}
@@ -77,7 +77,7 @@ function Creation() {
             />
           </p>
           <p className="creation__boxes-right-text">
-            Operations
+            OPERATIONS
             <img
               className="creation__boxes-left-content-text-img"
               src={operations}
@@ -85,7 +85,7 @@ function Creation() {
             />
           </p>
           <p className="creation__boxes-right-text">
-            Management
+            MANAGEMENT
             <img
               className="creation__boxes-left-content-text-img"
               src={management}
