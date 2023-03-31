@@ -5,14 +5,14 @@
     border-radius: 1rem;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    background-color: $primaryGreen;
+    background-color: #188187;
     padding: 1rem;
     width: 350px;
     @include box-shadow;
   
     &__container {
       position: relative;
-      height: 200px;
+      padding: 5rem 1rem;
       overflow: hidden;
 
       &--image {
@@ -20,14 +20,16 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
+        height: 146px;
+        background-color: white;
+        object-fit: contain;
+        aspect-ratio: 16/9;
+        object-position: center bottom;
       }
     }
   
     &__content {
-      padding: 1rem 0;
+      padding: 1rem 0 0.5rem;
       color: $lightWhite;
       text-align: left;
     }
@@ -35,15 +37,16 @@
     &__title {
       margin-top: 0;
       margin-bottom: 0.5rem;
-      font-size: 1.5rem;
+      font-size: 1.3125rem;
       font-weight: bold;
     }
   
     &__text {
       margin-top: 0;
       margin-bottom: 0;
-      font-size: 1rem;
+      font-size: 0.75rem;
       line-height: 1.5;
+      color: #ffffff;
     }
   }
   
