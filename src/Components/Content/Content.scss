@@ -1,7 +1,7 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/mixins" as *;
  
-.main {
+.main-content {
     grid-column: 2;
     background-color: $darkGreen;
     padding: 10rem;
@@ -10,6 +10,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     font-family: 'Rubik', sans-serif;
+    gap: 11rem;
   
     &__content {
       font-size: 1.2rem;
