@@ -1,6 +1,5 @@
 import "./CategoryWidgetCreation.scss";
 import SearchBox from "../../components/SearchBox/SearchBox";
-import BackWhite from "../../assets/images/back_white.svg";
 import Image1 from "../../assets/images/category/1.svg";
 import Image2 from "../../assets/images/category/2.svg";
 import Image3 from "../../assets/images/category/3.svg";
