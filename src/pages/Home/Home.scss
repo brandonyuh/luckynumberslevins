@@ -1,0 +1,10 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.grid {
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: 200px 1fr;
+    height: 100vh;
+  }
+ 
