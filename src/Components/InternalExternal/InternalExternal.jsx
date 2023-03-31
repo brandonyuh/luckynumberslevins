@@ -1,15 +1,18 @@
 import './InternalExternal.scss';
-import arrowBack from '../../assets/images/arrow-back.svg';
-import questionMark from '../../assets/images/question-mark.svg';
+
 // import { Link } from 'react-router-dom';
 import externalIcon from '../../assets/icons/external.svg';
 import internalIcon from '../../assets/icons/internal.svg';
-import HeaderPage from '../HeaderPages/HeaderPage';
+import HeaderPage from '../HeaderPage/HeaderPage';
 
 function InternalExternal() {
    return (
       <div className='container'>
-         <HeaderPage arrowBack={arrowBack} questionMark={questionMark} />
+         <HeaderPage
+            title='First Data Set'
+            subtitle='Select the type of insight you want to see
+'
+         />
          <div className='container__boxes'>
             <div className='container__internal'>
                <div className='container__internal--title'>
