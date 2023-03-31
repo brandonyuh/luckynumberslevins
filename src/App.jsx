@@ -1,13 +1,13 @@
-import './App.scss';
-// import InternalExternal from './components/InternalExternal/InternalExternal';
-// import Home from './pages/Home/Home';
-import Visualization from './pages/Visualization/Visualization';
+
+import "./App.scss";
+import InternalExternal from "./components/InternalExternal/InternalExternal";
+import Home from "./pages/Home/Home";
+
 
 function App() {
    return (
       <div className='App'>
-         {/* <Home /> */}
-         <Visualization />
+         <Home /> 
       </div>
    );
 }

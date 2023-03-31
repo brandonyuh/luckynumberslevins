@@ -1,0 +1,66 @@
+.number {
+  &--description {
+    text-align: center;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 36px;
+    color: #999999;
+  }
+  &--container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 1%;
+  }
+  &--card {
+    width: 180px;
+    height: 450px;
+
+    background: #dcd1ef;
+    border-radius: 20px;
+    transition: 500ms;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+  }
+  &--title {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 59px;
+  }
+  &--subtitle {
+    font-size: 20px;
+  }
+  &--list {
+    text-align: center;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    color: #212121;
+  }
+}
+.card2 {
+  background: #fff4d6;
+}
+
+.card3 {
+  background: #cceefc;
+}
+
+.card4 {
+  background: #dbf1d3;
+}
+
+.card5 {
+  background: #ffdada;
+}
