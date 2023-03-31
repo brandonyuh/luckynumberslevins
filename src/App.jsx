@@ -1,11 +1,12 @@
 import './App.scss';
+import Home from './pages/Home/Home';
 
 function App() {
-     return (
-          <div className='App'>
-               <p>Hello Lucky Number Slevins!!</p>
-          </div>
-     );
+   return (
+      <div className='App'>
+         <Home />
+      </div>
+   );
 }
 
 export default App;
