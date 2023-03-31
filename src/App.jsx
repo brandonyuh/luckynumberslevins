@@ -4,13 +4,14 @@ import Home from "./pages/Home/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Creation from "./components/Creation/Creation";
 import Category from "./pages/CategoryWidgetCreation/CategoryWidgetCreation";
+import Number from "./pages/NumberWidgets/NumberWidgets";
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/create" element={<DataSet />} /> */}
+          <Route path="/number" element={<Number />} />
           <Route path="/internalorexternal" element={<InternalExternal />} />
           <Route path="/selectlocation" element={<Creation />} />
           <Route path="/selectcategory" element={<Category />} />

@@ -8,7 +8,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 function Home() {
   return (
     <>
-      <Link to="/create" style={{ "text-decoration": "none" }}>
+      <Link to="/number" style={{ "text-decoration": "none" }}>
         <div className="grid">
           <Navbar />
           <Header />
