@@ -9,12 +9,11 @@ import Content from '../../components/Content/Content';
 function Home() {
    return (
       <>
-         <Link to='/create' style={{ 'text-decoration': 'none' }}>
+         <Link to='/number' style={{ 'text-decoration': 'none' }}>
             <div className='grid'>
                <Navbar />
                <Header />
-               {/* <MainContent /> */}
-               <Content />
+               <MainContent />
             </div>
          </Link>
       </>

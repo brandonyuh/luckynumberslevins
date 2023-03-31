@@ -13,10 +13,11 @@ import Image10 from "../../assets/images/category/10.svg";
 import Image11 from "../../assets/images/category/11.svg";
 import Image12 from "../../assets/images/category/12.svg";
 import HeaderPage from "../../components/HeaderPage/HeaderPage";
+import { Link } from "react-router-dom";
 
 function CategoryWidgetCreation() {
   return (
-    <>
+    <Link to="/visualization" style={{ "text-decoration": "none" }}>
       <HeaderPage title="Create a Widget" subtitle="2. Select the category of data you want to visualize."></HeaderPage>
 
       <p className="category__subdescription">
@@ -77,7 +78,7 @@ function CategoryWidgetCreation() {
           <p className="category__icons--description">Network</p>
         </div>
       </div>
-    </>
+    </Link>
   );
 }
 

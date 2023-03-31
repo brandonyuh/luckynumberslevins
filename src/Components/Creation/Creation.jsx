@@ -12,88 +12,91 @@ import management from "../../assets/images/management.svg";
 import people from "../../assets/images/ant-design_team-outlined.svg";
 
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Creation() {
   return (
     <div className="creation">
-      <HeaderPage
-        title="Select a Location / Department"
-        subtitle="Select the type of insight you want to see
+      <Link to="/selectcategory" style={{ "text-decoration": "none" }}>
+        <HeaderPage
+          title="Select a Location / Department"
+          subtitle="Select the type of insight you want to see
 "
-      />
+        />
 
-      <div className="creation__boxes">
-        <div className="creation__boxes-left">
-          <div className="creation__boxes-left-content">
-            <p className="creation__boxes-left-content-text">
-              ACCOUNTING
+        <div className="creation__boxes">
+          <div className="creation__boxes-left">
+            <div className="creation__boxes-left-content">
+              <p className="creation__boxes-left-content-text">
+                ACCOUNTING
+                <img
+                  className="creation__boxes-left-content-text-img"
+                  src={calculator}
+                  alt="calculator"
+                />
+              </p>
+              <p className="creation__boxes-left-content-text">
+                SALES
+                <img
+                  className="creation__boxes-left-content-text-img"
+                  src={arrowGrow}
+                  alt="arrow grow"
+                />
+              </p>
+              <p className="creation__boxes-left-content-text">
+                MARKETING
+                <img
+                  className="creation__boxes-left-content-text-img"
+                  src={happyFace}
+                  alt="happy face"
+                />
+              </p>
+              <p className="creation__boxes-left-content-text">
+                R&D
+                <img
+                  className="creation__boxes-left-content-text-img"
+                  src={lab}
+                  alt="lab"
+                />
+              </p>
+            </div>
+          </div>
+          <div className="creation__boxes-right">
+            <p className="creation__boxes-right-text">
+              FINANCE
               <img
                 className="creation__boxes-left-content-text-img"
-                src={calculator}
-                alt="calculator"
+                src={money}
+                alt="finance"
               />
             </p>
-            <p className="creation__boxes-left-content-text">
-              SALES
+            <p className="creation__boxes-right-text">
+              PEOPLE
               <img
                 className="creation__boxes-left-content-text-img"
-                src={arrowGrow}
-                alt="arrow grow"
+                src={people}
+                alt="people"
               />
             </p>
-            <p className="creation__boxes-left-content-text">
-              MARKETING
+            <p className="creation__boxes-right-text">
+              OPERATIONS
               <img
                 className="creation__boxes-left-content-text-img"
-                src={happyFace}
-                alt="happy face"
+                src={operations}
+                alt="operations"
               />
             </p>
-            <p className="creation__boxes-left-content-text">
-              R&D
+            <p className="creation__boxes-right-text">
+              MANAGEMENT
               <img
                 className="creation__boxes-left-content-text-img"
-                src={lab}
-                alt="lab"
+                src={management}
+                alt="management"
               />
             </p>
           </div>
         </div>
-        <div className="creation__boxes-right">
-          <p className="creation__boxes-right-text">
-            FINANCE
-            <img
-              className="creation__boxes-left-content-text-img"
-              src={money}
-              alt="finance"
-            />
-          </p>
-          <p className="creation__boxes-right-text">
-            PEOPLE
-            <img
-              className="creation__boxes-left-content-text-img"
-              src={people}
-              alt="people"
-            />
-          </p>
-          <p className="creation__boxes-right-text">
-            OPERATIONS
-            <img
-              className="creation__boxes-left-content-text-img"
-              src={operations}
-              alt="operations"
-            />
-          </p>
-          <p className="creation__boxes-right-text">
-            MANAGEMENT
-            <img
-              className="creation__boxes-left-content-text-img"
-              src={management}
-              alt="management"
-            />
-          </p>
-        </div>
-      </div>
+      </Link>
     </div>
   );
 }
