@@ -1,11 +1,12 @@
 import "./App.scss";
-import InternalExternal from "./components/InternalExternal/InternalExternal";
+import InternalExternal from "./components/SelectLocation/SelectLocation";
 import Home from "./pages/Home/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Creation from "./components/Creation/Creation";
 import Category from "./pages/CategoryWidgetCreation/CategoryWidgetCreation";
 import Number from "./pages/NumberWidgets/NumberWidgets";
 import Visualization from "./pages/Visualization/Visualization";
+import SelectLocation from "./components/SelectLocation/SelectLocation";
 function App() {
   return (
     <div className="App">
@@ -13,7 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/number" element={<Number />} />
-          <Route path="/internalorexternal" element={<InternalExternal />} />
+          <Route path="/internalorexternal" element={<SelectLocation />} />
           <Route path="/selectlocation" element={<Creation />} />
           <Route path="/selectcategory" element={<Category />} />
           <Route path="/visualization" element={<Visualization />} />
