@@ -1,23 +1,12 @@
-import "./App.scss";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import InternalExternal from "./Components/InternalExternal/InternalExternal";
-import Creation from "./Components/Creation/Creation";
+import './App.scss';
+import Home from './pages/Home/Home';
 
 function App() {
-  return (
-    <div>
-      <BrowserRouter>
-        <InternalExternal />
-        {/* <Creation /> */}
-        <Routes>
-          <Route />
-        </Routes>
-      </BrowserRouter>
-    </div>
-  );
-  //   <div className="App">
-  //     <p>Hello Lucky Number Slevins!!</p>
-  //   </div>
+   return (
+      <div className='App'>
+         <Home />
+      </div>
+   );
 }
 
 export default App;

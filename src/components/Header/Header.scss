@@ -1,0 +1,45 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.header {
+    grid-column: 2;
+    background-color: $lightWhite;
+    padding: 1rem;
+    z-index: 1;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+
+    &__text{
+        margin-left: 2rem;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // gap: 0.5rem;
+    }
+
+    &__title{
+        font-weight: $fw-700;
+        color: $fontColor;
+        font-size: 2.5rem;
+    }
+    &__subtitle{
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
+        color: $fontColorSecondary;
+    }
+
+    &__icons{
+        flex: 1;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        gap: 3rem;
+        margin-bottom: 1rem;
+        margin-right: 3rem;
+
+        &--img{
+            max-width: 30px;
+        }
+    }
+  }
